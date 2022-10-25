@@ -48,14 +48,14 @@ class MainApp extends StatelessWidget {
         child: Container(
           child: Column(
             children: <Widget>[
-              RaisedButton(
+              TextButton(
                 child: Text("Material"),
                 onPressed: () {
                   Navigator.pushNamed(context, MATERIAL_SCREEN);
                 },
               ),
               if (!kIsWeb)
-                RaisedButton(
+                TextButton(
                   child: Text("Cupertino"),
                   onPressed: () {
                     Navigator.of(context).pushNamed(CUPERTINO_SCREEN);
@@ -128,7 +128,10 @@ class _MyAppState extends State<MyApp> {
             children: <Widget>[
               Padding(
                 padding: const EdgeInsets.only(bottom: 60.0),
-                child: Text(thisText, style: Theme.of(context).textTheme.title),
+                child: Text(
+                  thisText,
+                  style: Theme.of(context).textTheme?.titleMedium,
+                ),
               ),
               Container(
                 height: 100.0,
@@ -142,7 +145,7 @@ class _MyAppState extends State<MyApp> {
                             content:
                                 Text("Paste clipboard stuff into the pinbox?"),
                             actions: <Widget>[
-                              FlatButton(
+                              TextButton(
                                   onPressed: () async {
                                     var copiedText =
                                         await Clipboard.getData("text/plain");
@@ -152,7 +155,7 @@ class _MyAppState extends State<MyApp> {
                                     Navigator.of(context).pop();
                                   },
                                   child: Text("YES")),
-                              FlatButton(
+                              TextButton(
                                   onPressed: () {
                                     Navigator.of(context).pop();
                                   },

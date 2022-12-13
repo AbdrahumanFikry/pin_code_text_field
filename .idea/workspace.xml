@@ -17,11 +17,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="454e3a70-107c-46fa-b354-df0efe7224c0" name="Default" comment="Upgrade dart sdk version + Add Input formatters">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
+    <list default="true" id="454e3a70-107c-46fa-b354-df0efe7224c0" name="Default" comment="Fix RangeError (length) issue">
+      <change beforePath="$PROJECT_DIR$/lib/pin_code_text_field.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pin_code_text_field.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -313,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666689622455</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Fix RangeError (length) issue">
+      <created>1670938743632</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1670938743632</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TodoView">
@@ -377,7 +381,8 @@
     <MESSAGE value="1.5.0" />
     <MESSAGE value="## [1.7.0]&#10;* Added `hasUnderline` option in pin box." />
     <MESSAGE value="Upgrade dart sdk version + Add Input formatters" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upgrade dart sdk version + Add Input formatters" />
+    <MESSAGE value="Fix RangeError (length) issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix RangeError (length) issue" />
   </component>
   <component name="masterDetails">
     <states>

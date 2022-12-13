@@ -239,11 +239,13 @@ class PinCodeTextFieldState extends State<PinCodeTextField>
   @override
   void initState() {
     super.initState();
+    _highlightAnimationController = AnimationController(
+      vsync: this,
+      duration:
+          widget.highlightAnimationDuration ?? Duration(milliseconds: 500),
+    );
+
     if (widget.highlightAnimation) {
-      _highlightAnimationController = AnimationController(
-          vsync: this,
-          duration:
-              widget.highlightAnimationDuration ?? Duration(milliseconds: 500));
       _highlightAnimationController.addStatusListener((status) {
         if (status == AnimationStatus.completed) {
           _highlightAnimationController.reverse();
@@ -254,7 +256,9 @@ class PinCodeTextFieldState extends State<PinCodeTextField>
       _highlightAnimationColorTween = ColorTween(
               begin: widget.highlightAnimationBeginColor,
               end: widget.highlightAnimationEndColor)
-          .animate(_highlightAnimationController);
+          .animate(
+        _highlightAnimationController,
+      );
       _highlightAnimationController.forward();
     }
     focusNode = widget.focusNode ?? FocusNode();

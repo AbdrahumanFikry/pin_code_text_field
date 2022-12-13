@@ -193,7 +193,7 @@ class PinCodeTextField extends StatefulWidget {
 class PinCodeTextFieldState extends State<PinCodeTextField>
     with SingleTickerProviderStateMixin {
   late AnimationController _highlightAnimationController;
-  late Animation _highlightAnimationColorTween;
+  Animation? _highlightAnimationColorTween;
   FocusNode? focusNode;
   String text = "";
   int currentIndex = 0;
@@ -254,11 +254,9 @@ class PinCodeTextFieldState extends State<PinCodeTextField>
         }
       });
       _highlightAnimationColorTween = ColorTween(
-              begin: widget.highlightAnimationBeginColor,
-              end: widget.highlightAnimationEndColor)
-          .animate(
-        _highlightAnimationController,
-      );
+        begin: widget.highlightAnimationBeginColor,
+        end: widget.highlightAnimationEndColor,
+      ).animate(_highlightAnimationController);
       _highlightAnimationController.forward();
     }
     focusNode = widget.focusNode ?? FocusNode();
@@ -484,7 +482,7 @@ class PinCodeTextFieldState extends State<PinCodeTextField>
               builder: (BuildContext context, Widget? child) {
                 if (widget.pinBoxDecoration != null) {
                   boxDecoration = widget.pinBoxDecoration!(
-                    _highlightAnimationColorTween.value,
+                    _highlightAnimationColorTween?.value,
                     pinBoxColor,
                     borderWidth: widget.pinBoxBorderWidth,
                     radius: widget.pinBoxRadius,
@@ -492,7 +490,7 @@ class PinCodeTextFieldState extends State<PinCodeTextField>
                 } else {
                   boxDecoration =
                       ProvidedPinBoxDecoration.defaultPinBoxDecoration(
-                    _highlightAnimationColorTween.value,
+                    _highlightAnimationColorTween?.value,
                     pinBoxColor,
                     borderWidth: widget.pinBoxBorderWidth,
                     radius: widget.pinBoxRadius,

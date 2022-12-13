@@ -17,8 +17,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="454e3a70-107c-46fa-b354-df0efe7224c0" name="Default" comment="Fix RangeError (length) issue">
-      <change beforePath="$PROJECT_DIR$/lib/pin_code_text_field.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pin_code_text_field.dart" afterDir="false" />
+    <list default="true" id="454e3a70-107c-46fa-b354-df0efe7224c0" name="Default" comment="Fix LateInitializationError: Field '_highlightAnimationController@243154025' issue">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -317,7 +318,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670938743632</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Fix LateInitializationError: Field '_highlightAnimationController@243154025' issue">
+      <created>1670938913994</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1670938913994</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Fix LateInitializationError: Field '_highlightAnimationController@243154025' issue">
+      <created>1670938995489</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1670938995489</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TodoView">
@@ -382,7 +397,8 @@
     <MESSAGE value="## [1.7.0]&#10;* Added `hasUnderline` option in pin box." />
     <MESSAGE value="Upgrade dart sdk version + Add Input formatters" />
     <MESSAGE value="Fix RangeError (length) issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix RangeError (length) issue" />
+    <MESSAGE value="Fix LateInitializationError: Field '_highlightAnimationController@243154025' issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix LateInitializationError: Field '_highlightAnimationController@243154025' issue" />
   </component>
   <component name="masterDetails">
     <states>
